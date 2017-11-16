@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sphere</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+    <main>
+        <form class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title">Drawing on canvas!</h3>
+            </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <label for="raduisInput">Radius:</label>
+                    <input class="form-control" id="raduisInput" type="number" placeholder="Radius">
+                </div>
+
+                <div class="form-group">
+                    <label for="volumeInput">Volume:</label>
+                    <input class="form-control" id="volumeInput" type="text" placeholder="Volume">
+                </div>
+
+                <button id="btnSubmit" class="btn btn-success btn-block">calculate</button>
+            </div>
+
+        </form>
+        
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">Drawing on canvas!</h3>
+            </div>
+            <div class="panel-body">
+                <canvas id='sphereCanvas'></canvas>
+                <button id='clear' class="btn btn-danger btn-block">Clear</button>
+            </div>
+
+        </div>
+        
+    </main>
+
+    <script src="scripts/circle-module.js"></script>
+    <script src="scripts/canvas-handler.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
